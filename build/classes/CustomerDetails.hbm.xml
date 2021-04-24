@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.niit.Model.CustomerDetails"   table="customer">
+
+<id name="Id" type="java.lang.Integer">
+<column name="dataid"></column>
+<generator class="identity"></generator>
+</id>
+
+
+<property name="firstname" type="java.lang.String">
+<column name="FIRSTNAME"></column>
+</property>
+<property name="lastname" type="java.lang.String">
+<column name="LASTNAME"></column>
+</property>
+
+<property name="username" type="java.lang.String">
+<column name="USERNAME"></column>
+</property>
+
+<property name="password" type="java.lang.String">
+<column name="PASSWORD"></column>
+</property>
+
+<property name="email" type="java.lang.String">
+<column name="EMAIL"></column>
+</property>
+
+<property name="phone" type="java.lang.String">
+<column name="PHONE"></column>
+</property>
+
+  <property name="roll" type="java.lang.String">
+            <column name="Roll" default="USER" not-null="true"/>
+        </property>
+     
+
+</class>
+
+</hibernate-mapping>
